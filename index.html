@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Application</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Multimedia Application</h1>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#video">Videos</a>
+            <a href="#audio">Audio</a>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="image-grid">
+            <img src="multimedia.jpg" alt="Image 1">
+            <img src="HKCZ9902.JPG" class="image-large" alt="Image 2">
+            <img src="smartphone.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Video Player</h2>
+        <video id="videoPlayer" controls>
+            <source id="videoSource" src="IMG_8063.MOV" type="video/mp4">
+            <source id="videoSource" src="computer day.mp4" type="video/mp4">
+        </video>
+        <div class="controls">
+           
+            <button id="prevBtn">
+                <i class="fas fa-backward"></i> <span></span>
+            </button>
+            <button id="playPauseBtn">
+                <i class="fas fa-play"></i> <span> </span>
+            </button>
+            <button id="nextBtn">
+                <i class="fas fa-forward"></i> <span></span>
+            </button>
+        </div>
+
+    </section>
+    
+
+    <section id="audio">
+        <h2>Audio Player</h2>
+        <audio controls>
+            <source src="Vande Mataram.mp4" type="audio/mp3">
+    </section>
+
+    <script src="web.js"></script>
+</body>
+</html>
